@@ -1,0 +1,10 @@
+extends ./layout
+
+block page-header
+  h1 Person List using Jade engine
+
+block content
+  ul 
+    for item in personList
+      li=item.id+':'
+        p=item.firstName +' '+item.lastName
